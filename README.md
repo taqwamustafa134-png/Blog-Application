@@ -1,16 +1,107 @@
-# React + Vite
+# ✨ InkSpace — Community Blog Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+InkSpace is a modern full-stack community blogging platform where users can create, publish, edit, delete, and explore stories.
 
-Currently, two official plugins are available:
+The project uses **React + Vite** for the frontend and **Node.js + Express + MongoDB** for the backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👤 Authentication
+- User registration
+- User login
+- JWT authentication
+- Secure password hashing with bcrypt
+- Protected routes
+- Logout functionality
 
-## Expanding the ESLint configuration
+### 📝 Blog Management
+- Create new stories
+- View all published stories
+- Open and read individual stories
+- Edit your own stories
+- Delete your own stories
+- Author information
+- Automatic reading-time calculation
+- Word counter while writing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔎 Search
+- Search stories by title
+- Search by story content
+- Search by author name
+- Displays the number of matching stories
+
+### 🎨 Modern UI
+- Clean and responsive design
+- Modern navigation bar
+- Hero section
+- Featured story section
+- Blog cards
+- Search panel
+- Profile panel
+- Write/Edit story modal
+- Story details modal
+- Responsive mobile layout
+- Smooth scrolling
+- Interactive buttons and hover effects
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- CSS
+- Lucide React Icons
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+- CORS
+- dotenv
+
+---
+
+## 📁 Project Structure
+
+```text
+InkSpace/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── ...
+│   │
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── eslint.config.js
+│   └── README.md
+│
+├── backend/
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Post.js
+│   │
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── postRoutes.js
+│   │
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
+│
+└── README.md
